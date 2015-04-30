@@ -3,6 +3,7 @@ Sequel.migration do
     # Politicians, e.g. Barack Obama, Mitt Romney
     create_table(:politicians) do
       primary_key :id
+      String   :fec_number, text: false, null: false
       String   :first_name, text: false, null: false
       String   :last_name,  text: false, null: false
       String   :party,      text: false, null: false
